@@ -14,5 +14,5 @@ joblib.dump(knn_model, joblib_file)
 
 def forecast(data):
  joblib_knn_model = joblib.load(joblib_file)
- return joblib_knn_model.predict(data)
+ return joblib_knn_model.forecast(data)
 
