@@ -26,7 +26,7 @@ with col2:
 
 st.text('')
 if st.button("Predict Churn"):
-    result = predict(
+    result = forecast(
         np.array([[C_1, C_2, O_2]]))
     st.text(result[0])
 
