@@ -15,8 +15,9 @@ joblib.dump(joblib_knn_model, joblib_file)
 
 x_sample = [[80005, 56, 7, 71.54, 246, False, True],
        [80006, 40, 4, 33.71, 336, False, True]]
+data=x_sample 
 
-def forecast(data=x_sample):
+def forecast(data):
  joblib_knn_model = joblib.load(joblib_file)
  return joblib_knn_model.predict(data)
 
