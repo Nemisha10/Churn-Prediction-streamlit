@@ -413,9 +413,8 @@ data.columns.values
 # In[46]:
 
 
-features = data[['CustomerID', 'Age',
-       'Subscription_Length_Months', 'Monthly_Bill', 'Total_Usage_GB',
-          'Gender_Female', 'Gender_Male']]
+features = data[['Age',
+       'Subscription_Length_Months', 'Monthly_Bill', 'Total_Usage_GB']]
 
 labels = data['Churn']
 
@@ -467,14 +466,12 @@ print(val_df['Churn'].value_counts())
 
 
 #Model
-x_train = np.array(train_df[['CustomerID', 'Age',
-       'Subscription_Length_Months', 'Monthly_Bill', 'Total_Usage_GB',
-          'Gender_Female', 'Gender_Male']])
+x_train = np.array(train_df[['Age',
+       'Subscription_Length_Months', 'Monthly_Bill', 'Total_Usage_GB']])
 y_train = np.array(train_df['Churn'])
 
-x_val = np.array(val_df[['CustomerID', 'Age',
-       'Subscription_Length_Months', 'Monthly_Bill', 'Total_Usage_GB',
-          'Gender_Female', 'Gender_Male']])
+x_val = np.array(val_df[['Age',
+       'Subscription_Length_Months', 'Monthly_Bill', 'Total_Usage_GB']])
 y_val = np.array(val_df['Churn'])
 
 
