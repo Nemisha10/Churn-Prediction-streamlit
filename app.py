@@ -5,7 +5,7 @@
 import streamlit as st 
 import pandas as pd
 import numpy as np
-from prediction import predict
+import prediction
 
 st.title('Customer Churn Prediction')
 st.markdown('Toy model to play to predict churn of Customers')
