@@ -12,7 +12,7 @@ sys.modules['sklearn.externals.joblib'] = joblib
 joblib_file = "joblib_knn_model.pkl"  
 joblib.dump(knn_model, joblib_file)
 
-def predict(data):
+def predict():
  joblib_knn_model = joblib.load(joblib_file)
- return joblib_knn_model.predict(data)
+ return joblib_knn_model.predict()
 
