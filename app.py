@@ -22,6 +22,7 @@ with col1:
 with col2:
    st.text("Oher Characteristics")
    O_2 = st.slider('Usage(GB)', 50, 250, 500)
+   O_3 = st.slider('Age', 18, 40, 80)
 
 
 st.text('')
